@@ -7,18 +7,11 @@ public class ContaBancaria {
     private Cliente titular;
 
     
-    public ContaBancaria(int agencia, int numero, Cliente titular) {
+    public ContaBancaria() {
         this.agencia = agencia;
         this.numero = numero;
         this.titular = titular;
-    }
-
-    public void CriaNovosClientes(String nome, String cpf, String profissao, String id){
-        Cliente novoCliente = new Cliente(nome, cpf, profissao, id);    
-        novoCliente.setNome(nome);
-        novoCliente.setCpf(cpf);
-        novoCliente.setProfissao(profissao);
-        novoCliente.setId(id);
+        this.saldo = saldo;
     }
 
     void depositar(double valor){
@@ -43,11 +36,17 @@ public class ContaBancaria {
             return false;
     }
 
+
     public double getSaldo() {
         return this.saldo;
     }
 
     public int getAgencia() {
+        return this.agencia;
+    }
+
+    public int setAgencia(int agencia) {
+        this.agencia = agencia;
         return this.agencia;
     }
 
@@ -61,6 +60,10 @@ public class ContaBancaria {
     }
     
     public Cliente getTitular(String titular) {
+        return this.titular;
+    }
+
+    public Cliente setTitular(String titular){
         return this.titular;
     }
 }

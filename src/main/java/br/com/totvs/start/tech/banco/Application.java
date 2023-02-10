@@ -22,6 +22,8 @@ public class Application {
 		ClienteServiceImpl clienteService = new ClienteServiceImpl();
 		ContaBancariaServiceImpl contaBancariaService = new ContaBancariaServiceImpl();
 
+
+		System.out.println(contaBancariaService.verficarSaldod(200));
 	}
 
 }
