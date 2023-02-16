@@ -7,4 +7,5 @@ public interface ContaBancariaService {
     
     public ContaBancaria CriaConta(int agencia, int numero, Cliente titular);
     public ContaBancaria verficarSaldod(double saldo);
+    public ContaBancaria EncontraTitular(Cliente titular);
 }

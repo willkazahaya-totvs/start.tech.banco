@@ -25,5 +25,13 @@ public class ContaBancariaServiceImpl implements ContaBancariaService{
         return saldoConta;
     }
 
+    public ContaBancaria EncontraTitular(Cliente titular){
+        ContaBancaria nomeTitular = new ContaBancaria();
+
+        nomeTitular.getTitular("");
+
+        return nomeTitular;
+    }
+
 
 }

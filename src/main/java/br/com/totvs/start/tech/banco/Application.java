@@ -19,6 +19,8 @@ public class Application {
 
 		SpringApplication.run(Application.class, args);
 
+		
+
 		ClienteServiceImpl clienteService = new ClienteServiceImpl();
 		ContaBancariaServiceImpl contaBancariaService = new ContaBancariaServiceImpl();
 

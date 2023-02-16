@@ -4,7 +4,7 @@ import br.com.totvs.start.tech.banco.entity.Cliente;
 
 public interface ClienteService {
     
-    public Cliente criarCliente(String nome, String cpf, String profissao, String id);
+    public Cliente criarCliente(String id, String nome, String cpf, String rg);
 
 
 }

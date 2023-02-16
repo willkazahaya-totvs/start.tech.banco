@@ -5,13 +5,10 @@ public class Cliente {
     private int id;
     private String nome;
     private String cpf;
-    private String profissao;
+    private String rg;
 
     public Cliente() {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.profissao = profissao;
-        this.id = id;
+
     }
 
     public String getNome() {
@@ -30,12 +27,12 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public String getProfissao() {
-        return profissao;
+    public String getrg() {
+        return rg;
     }
 
     public void setProfissao(String profissao) {
-        this.profissao = profissao;
+        this.rg = profissao;
     }
 
     public int getId() {

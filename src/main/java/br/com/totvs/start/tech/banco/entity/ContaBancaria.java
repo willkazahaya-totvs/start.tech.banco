@@ -1,5 +1,7 @@
 package br.com.totvs.start.tech.banco.entity;
 
+
+
 public class ContaBancaria {
     private double saldo;
     private int agencia;
